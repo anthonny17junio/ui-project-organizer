@@ -1,0 +1,12 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <form [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+      <input type="text" id="login" class="fadeIn first" name="login" placeholder="username" formControlName="username">
+      <input type="text" id="password" class="fadeIn second" name="login" placeholder="password"  formControlName="password">
+      <input type="submit" class="fadeIn third" value="Log In">
+    </form>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

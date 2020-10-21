@@ -1,0 +1,60 @@
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card-title{
+    margin-top: 10px;
+    color: #E86313;
+}
+
+.card-image{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.card-text{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #646464;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  form.seachform input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+  }
+  
+  form.seachform button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #E86313;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.seachform button:hover {
+    background: #8b481d;
+  }
+  
+  form.seachform::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

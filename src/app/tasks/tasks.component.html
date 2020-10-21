@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">
+      <img src="/assets/logo.png" alt="logo" style="width:100px;">
+    </a>
+    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" (click)="navigateToProjects()">Back</button>
+</nav>
+
+<div class="row">
+  <div class="col" class="col-12 col-md-12">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-auto">
+          <div>
+            <img class="card-image image-project" [src]="project.imageUrl !== undefined? project.imageUrl: 'https://tiendavertigo.com/assets/img/img-placeholder.png'">
+          </div>
+        </div>
+        <div class="col">
+            <div class="card-block px-2">
+              <h2 class="card-title title-project">{{project.name}}</h2>
+              <p class="card-text description-project">{{project.description}}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col" class="col-12 col-md-6" *ngFor="let task of tasks;">
+    <div class="card card-task">
+      <div class="card-header"><p class="card-header-task">· {{task.name}}</p></div>
+      <div class="row no-gutters">
+        <div class="col-auto">
+        </div>
+        <div class="col">
+            <div class="card-block card-body-task px-2">
+              <p class="card-text">{{task.description}}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

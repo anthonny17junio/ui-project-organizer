@@ -1,0 +1,38 @@
+.title-project{
+    margin-top: 10px;
+    color: #E86313;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description-project{
+    margin-top: 10px;
+    color: #646464;
+}
+
+@media screen and (max-width: 767px){   
+    .image-project{
+        height: 75px;
+    }
+}
+
+@media screen and (min-width: 767px){   
+    .image-project{
+        height: 200px;
+    }
+}
+
+.card-task{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.card-body-task{
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.card-header-task{
+    font-weight: bold;
+}
